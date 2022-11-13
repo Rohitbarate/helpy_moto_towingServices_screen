@@ -1,12 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Button, View, TouchableOpacity } from 'react-native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native'
+import TowingService from './components/screens/TowingService'
+import DriverInfo from './components/screens/DriverInfo';
+import Icon from 'react-native-vector-icons/Entypo'
 
 export default function App() {
+  const Stack = createNativeStackNavigator();
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <NavigationContainer>
       <StatusBar style="auto" />
-    </View>
+      <Stack.Navigator 
+      initialRouteName='Towing Service'
+       screenOptions={{ headerTitleAlign: "center" ,
+       headerTitleStyle:{fontSize:16,fontWeight:'600'}}}
+      >
+        <Stack.Screen name='Towing Service' component={TowingService} options={{headerRight: () => (
+          <TouchableOpacity>
+            <Icon name="dots-three-vertical" size={24} color="#5D5FEF"/>
+          </TouchableOpacity>
+          ),}}/>
+        <Stack.Screen name='Driver' component={DriverInfo} options={{headerShown:false}} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
