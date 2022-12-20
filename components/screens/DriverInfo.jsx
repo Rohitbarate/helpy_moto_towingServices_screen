@@ -23,7 +23,7 @@ const DriverInfo = ({ route, navigation }) => {
     }
 
     function sendMsgOnWhatsapp() {
-        Linking.openURL(`https://api.whatsapp.com/send?text=Hi ${driver.name},&phone=+91${driver.phoneNum}`)
+        Linking.openURL(`https://api.whatsapp.com/send?text=Hi ${driver.name},i am a user of !stopable's and i am stucked at pimpri chowk, are you available right now? &phone=+91${driver.phoneNum}`)
     }
 
     function share() {

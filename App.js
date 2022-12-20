@@ -5,6 +5,8 @@ import { NavigationContainer } from '@react-navigation/native'
 import TowingService from './components/screens/TowingService'
 import DriverInfo from './components/screens/DriverInfo';
 import Icon from 'react-native-vector-icons/Entypo'
+import First from './components/screens/First';
+import Second from './components/screens/Second';
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -12,10 +14,27 @@ export default function App() {
     <NavigationContainer>
       <StatusBar style="auto" />
       <Stack.Navigator 
-      initialRouteName='Towing Service'
+      initialRouteName="!Stopable's"
        screenOptions={{ headerTitleAlign: "center" ,
        headerTitleStyle:{fontSize:16,fontWeight:'600'}}}
       >
+        <Stack.Screen name="!Stopable's" component={First} options={
+          {
+            headerTitleStyle:{
+              fontSize:26,
+              fontWeight:'800'
+            }
+          }
+        } />
+        <Stack.Screen name="veh type" component={Second} options={
+          {
+           headerTitle:'Vehicle details',
+           headerTitleStyle:{
+            fontSize:26,
+            fontWeight:'800'
+          }
+          }
+        } />
         <Stack.Screen name='Towing Service' component={TowingService} options={{headerRight: () => (
           <TouchableOpacity>
             <Icon name="dots-three-vertical" size={24} color="#5D5FEF"/>

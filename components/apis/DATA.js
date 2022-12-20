@@ -1,6 +1,6 @@
 const drivers = [
     {
-        name:'Rohit Barate',
+        name:'Soham Kumbhar',
         driverId:2567890,
         distance:1.8,
         img:require('../../assets/img/user.jpg'),
@@ -9,7 +9,7 @@ const drivers = [
         charge:10,
         desc:'Hello to all my Happy clients, I am Rahul Jain and I have 1 year experience in machanics. I have fixed a lot of branded cars. Customers have great trust on me. The prices are great and very affordable so just try once. Thank you',
         location:'',
-        phoneNum:'9822544067'
+        phoneNum:'9325131169'
 
     },
     {
@@ -22,7 +22,7 @@ const drivers = [
         charge:10,
         desc:'Hello to all my Happy clients, I am Rahul Jain and I have 1 year experience in machanics. I have fixed a lot of branded cars. Customers have great trust on me. The prices are great and very affordable so just try once. Thank you',
         location:'',
-        phoneNum:'9822544067'
+        phoneNum:'9325131169'
 
     },
     {
@@ -35,7 +35,7 @@ const drivers = [
         charge:10,
         desc:'Hello to all my Happy clients, I am Rahul Jain and I have 1 year experience in machanics. I have fixed a lot of branded cars. Customers have great trust on me. The prices are great and very affordable so just try once. Thank you',
         location:'',
-        phoneNum:'9822544067'
+        phoneNum:'9325131169'
 
     },
     {
@@ -48,7 +48,7 @@ const drivers = [
         charge:10,
         desc:'Hello to all my Happy clients, I am Rahul Jain and I have 1 year experience in machanics. I have fixed a lot of branded cars. Customers have great trust on me. The prices are great and very affordable so just try once. Thank you',
         location:'',
-        phoneNum:'9822544067'
+        phoneNum:'9325131169'
 
     },
     {
@@ -61,7 +61,7 @@ const drivers = [
         charge:10,
         desc:'Hello to all my Happy clients, I am Rahul Jain and I have 1 year experience in machanics. I have fixed a lot of branded cars. Customers have great trust on me. The prices are great and very affordable so just try once. Thank you',
         location:'',
-        phoneNum:'9822544067'
+        phoneNum:'9325131169'
 
     },
     {
@@ -74,7 +74,7 @@ const drivers = [
         charge:10,
         desc:'Hello to all my Happy clients, I am Rahul Jain and I have 1 year experience in machanics. I have fixed a lot of branded cars. Customers have great trust on me. The prices are great and very affordable so just try once. Thank you',
         location:'',
-        phoneNum:'9822544067'
+        phoneNum:'9325131169'
 
     },
     {
@@ -87,7 +87,7 @@ const drivers = [
         charge:10,
         desc:'Hello to all my Happy clients, I am Rahul Jain and I have 1 year experience in machanics. I have fixed a lot of branded cars. Customers have great trust on me. The prices are great and very affordable so just try once. Thank you',
         location:'',
-        phoneNum:'9822544067'
+        phoneNum:'9325131169'
 
     },
     {
@@ -100,7 +100,7 @@ const drivers = [
         charge:10,
         desc:'Hello to all my Happy clients, I am Rahul Jain and I have 1 year experience in machanics. I have fixed a lot of branded cars. Customers have great trust on me. The prices are great and very affordable so just try once. Thank you',
         location:'',
-        phoneNum:'9822544067'
+        phoneNum:'9325131169'
 
     },
     {
@@ -113,7 +113,7 @@ const drivers = [
         charge:10,
         desc:'Hello to all my Happy clients, I am Rahul Jain and I have 1 year experience in machanics. I have fixed a lot of branded cars. Customers have great trust on me. The prices are great and very affordable so just try once. Thank you',
         location:'',
-        phoneNum:'9822544067'
+        phoneNum:'9325131169'
 
     },
     {
@@ -126,7 +126,7 @@ const drivers = [
         charge:10,
         desc:'Hello to all my Happy clients, I am Rahul Jain and I have 1 year experience in machanics. I have fixed a lot of branded cars. Customers have great trust on me. The prices are great and very affordable so just try once. Thank you',
         location:'',
-        phoneNum:'9822544067'
+        phoneNum:'9325131169'
 
     },
 ]
@@ -142,7 +142,7 @@ const CustomerRating = [
     },
     {
       id: 2,
-      name: "Rohit Barate",
+      name: "Soham Kumbhar",
       img: require("../../assets/img/user5.png"),
       rating: 4.9,
       feedback:
@@ -166,4 +166,52 @@ const CustomerRating = [
     },
   ];
 
-export {drivers,CustomerRating};
+  const vehicleTypes =[
+    {
+        id:2,
+        name:'Bike',
+        img:"https://cdni.iconscout.com/illustration/premium/thumb/bike-3176649-2666324.png"
+    },
+    {
+        id:3,
+        name:'car (sedan)',
+        img:"https://cdn3d.iconscout.com/3d/premium/thumb/car-4454426-3692778.png"
+    },
+    {
+        id:4,
+        name:'car (suv)',
+        img:"https://cdn3d.iconscout.com/3d/premium/thumb/jeep-4522189-3860856.png"
+    },
+    {
+        id:5,
+        name:'small truck',
+        img:"https://cdn3d.iconscout.com/3d/premium/thumb/pickup-van-6851103-5619093.png"
+    },
+    {
+        id:6,
+        name:'truck',
+        img:"https://cdn3d.iconscout.com/3d/premium/thumb/truck-5349020-4479021.png"
+    },
+    {
+        id:7,
+        name:'construction vehicle',
+        img:"https://cdn3d.iconscout.com/3d/premium/thumb/excavator-5371149-4486746.png"
+    },
+    {
+        id:8,
+        name:'tractor',
+        img:"https://cdn3d.iconscout.com/3d/premium/thumb/tractor-4522200-3860851.png"
+    },
+    {
+        id:9,
+        name:'heavy vehicle',
+        img:"https://cdn3d.iconscout.com/3d/premium/thumb/mining-vehicle-5371182-4486739.png"
+    },
+    {
+        id:10,
+        name:'bus',
+        img:"https://cdn3d.iconscout.com/3d/premium/thumb/bus-5796461-4844858.png"
+    },
+  ]
+
+export {drivers,CustomerRating,vehicleTypes};
